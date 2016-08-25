@@ -62,22 +62,7 @@ void mousemove(int x_pos, int y_pos)
     const char *com = command.c_str();
     system(com);
 }
-///This is the functions that gets the centroid of the thresholded image
-/*void getCentroid(Mat &thresholded_image, Point &Centroid, int &Area)
-{
-    ///The object that holds all the centroids.
-    ///Pass in the image. The boolean true tells the function that the image is binary
-    Moments m = moments(thresholded_image, true);
-    ///Moment along x axis
-    double M10 = m.m10;
-    ///Moment along y-axis;
-    double M01 = m.m01;
-    ///Area
-    double M00 = m.m00;
-    Centroid.x  = int(M10/M00);
-    Centroid.y  = int(M01/M00);
-    Area        = int(M00);
-}*/
+
 
 int main()
 {
@@ -244,7 +229,7 @@ int main()
 
 
 
-						         //mousemove((circles[t][0]),(circles[t][1]));
+						         mousemove((circles[t][0]),(circles[t][1]));
 		cout << "(circles[t][0]) , (circles[t][1]) " << (circles[t][0]) <<","<< (circles[t][1]) << endl;
 
 //xx=(circles[t][0]);
