@@ -50,9 +50,9 @@ void mousemove(int x_pos, int y_pos)
     stringstream sstr; stringstream sstr2;
 
     ///Conversion to regular string happens here
-    sstr<<5*x_pos;
+    sstr<<1.2*x_pos;//نقطه ایکس (محور طولی) برای شروع صفحه نمایش
     xcord = sstr.str();
-    sstr2<<5*y_pos;
+    sstr2<<0.9*y_pos;//نقطه وای(محور عرضی-ارتفاع) برای شروع صفحه نمایش
     ycord = sstr2.str();
 
     ///Getting the command string
